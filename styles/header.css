@@ -67,16 +67,17 @@ body {
   border: 1px solid rgb(240,240,240);
   margin-left: -1px;
   margin-right: 10px;
-
  }
 
- .search-button, .voice-search-button {
+ .search-button, .voice-search-button, .pload-icon-container, .youtube-apps-container, .notifications-icon-container {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /*used to center tooltip*/
+  align-items: center;/*center tooltip vertically*/
+  justify-content: center;/*center tooltip horizontally*/
  }
- .search-button .tooltip, .voice-search-button .tooltip {
+ .search-button .tooltip, .voice-search-button .tooltip,
+  .youtube-apps-container .tooltip, .notifications-icon-container .tooltip {
+  font-family: Roboto, Arial;
   position: absolute;
   background-color: gray;
   color: white;
@@ -85,14 +86,37 @@ body {
   font-size: 12px;
   bottom: -30px;
   opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
+  transition: opacity 0.15s;
+  pointer-events: none;/*this stops hover on tooltip itself*/
+  white-space: nowrap; /*this code makes voice tooltip text wrap to next line*/
  }
+ 
 
- .search-button:hover .tooltip, .voice-search-button .tooltip {
+ 
+.upload-icon-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-icon-container .tooltip{/* separated upload-icon because general styles where not working*/
+  font-family: Roboto, Arial;
+  background-color: gray;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  opacity: 0;
+  padding: 4px 8px;
+  border-radius: 2px;
+  bottom: -30px;
+}
+
+.search-button:hover .tooltip, .voice-search-button:hover .tooltip, 
+.upload-icon-container:hover .tooltip, .youtube-apps-container:hover .tooltip, .notifications-icon-container:hover .tooltip{
   opacity: 1;
- /*transition: 0pacity 0.15s;*/ 
- }
+}
+
  .search-icon {
   height: 25px;
  /* margin-top: ;*/
@@ -104,12 +128,14 @@ body {
   background-color: rgb(245, 245, 245);
   border: none;
  }
-
+ 
  .voice-search-icon{
   height: 24px;
   margin-top: 4px;
-  
  }
+
+
+
  .right-section {
   /*background-color: lightblue;*/
   width: 180px;
@@ -152,4 +178,5 @@ height: 24px;
   height: 32px;
   border-radius: 16px;
 }
+
 
