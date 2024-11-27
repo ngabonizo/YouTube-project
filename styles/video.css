@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 15px;
-<<<<<<< HEAD
   row-gap: 15px;
 }
 
@@ -27,11 +26,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-=======
-row-gap: 15px;
-}
-
->>>>>>> 7651a4cfb7f871743036720baa2c9eac4d9bf154
 
 .thumbnail{
   width: 100%;
