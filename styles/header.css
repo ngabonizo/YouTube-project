@@ -1,0 +1,36 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.left-section, .middle-section, .right-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.humburger-menu{
+  height: 24px;
+  margin: 0 24px;
+}
+.youtube-logo{
+  height: 24px;
+  
+}
+.middle-section{
+  margin-right: 60px;
+}
+
+.voice-search{
+  height: 24px;
+}
+.upload{
+  height: 24px;
+}
+.youtube-apps{
+  height: 24px;
+}
+.notifications{
+  height: 24px;
+}
