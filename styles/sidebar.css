@@ -2,32 +2,35 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  top: 55px;
+  top: 57px;
+  width: 40px;
   background-color: white;
-  width: 72px;
-  z-index: 200;
-  padding-top: 5px;
- }
-
- .sidebar-link {
+  width: 70px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height:74px;
-  margin-bottom: 1px;
-  cursor: pointer;
- }
- .sidebar-link:hover{
-  background-color: rgb(232, 232, 232)
- }
-
- .sidebar-link img {
+}
+.sidebar img{
+  width: 24px;
   height: 24px;
   margin-bottom: 5px;
- }
+}
 
- .sidebar-link div {
-  font-family: Roboto , Arial;
+.sidebar .sidebar-icon-name{
+  font-family: Roboto, Arial;
   font-size: 10px;
- }
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 400;
+  color: #212529;
+  line-height: 2;
+}
+ 
+.sidebar .sidebar-link {
+
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
