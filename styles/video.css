@@ -70,3 +70,16 @@
  margin-top: 7px;
   margin-bottom: 10px;
 }
+
+.thumbnail-container {
+  position: relative;
+}
+ .video-time {
+  vertical-align: center;
+  position: absolute;
+  right: 5px;
+  top: 105px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+ }
