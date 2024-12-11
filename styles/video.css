@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
   flex: 1;
+  position: relative;
 }
 
 
@@ -74,12 +75,3 @@
 .thumbnail-container {
   position: relative;
 }
- .video-time {
-  vertical-align: center;
-  position: absolute;
-  right: 5px;
-  top: 105px;
-  background-color: black;
-  color: white;
-  font-size: 12px;
- }
