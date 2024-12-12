@@ -136,3 +136,20 @@
   padding: 20px;
 }*/
 
+.notification-container {
+  position: relative;
+}
+.notification-count {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  top: 0;
+  left: 13px;
+  padding: 1px 5px  1px 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
