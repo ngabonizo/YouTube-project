@@ -183,7 +183,7 @@
 .create-icon-container, .youtube-apps-container, .notification-container{
   position: relative;
 }
-.create-icon-container .tooltip, .youtube-apps-container .tooltip, .notification-container .tooltip{
+.create-icon-container .tooltip  {
   position: absolute;
   background-color: gray;
   color: white;
@@ -198,6 +198,28 @@
   
 }
 
+.youtube-apps-container .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  right: -12px;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.notification-container .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  right: -9px;
+  opacity: 0;
+}
 .create-icon-container:hover .tooltip, .youtube-apps-container:hover .tooltip, .notification-container:hover .tooltip{
   opacity: 1;
 }
